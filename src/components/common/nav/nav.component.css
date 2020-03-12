@@ -1,0 +1,30 @@
+.main-nav{
+    padding: 10px;
+    border-bottom: 1px solid #609beb;
+}
+
+.main-nav .site-links{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+.main-nav .site-links li{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-nav .site-links li a{
+    color: #131313;
+}
+
+.main-nav .site-links li a:hover{
+    color: #609beb;
+}
+
+.main-nav .site-links li a.active{
+    color: #609beb;
+}

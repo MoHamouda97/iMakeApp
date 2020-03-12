@@ -1,0 +1,139 @@
+<app-page-header>
+    <div class="page-header-img">
+        <img src="./../../../assets/job-header.jpg" class="img-responsive" />
+    </div>
+    <div class="page-header-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Join Our Team
+                    </h2>
+                </div>
+                <div class="col-1 icon">
+                    <i nz-icon nzType="team" nzTheme="outline"></i>
+                </div>
+                <div class="col-11">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</app-page-header>
+
+<section class="jobs">
+    <h2 class="second-color section-heading">
+        Join Us
+        <span class="big-letter">J</span>
+    </h2>    
+    <p class="paragrahp-color">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+
+    <!-- start form -->
+    <div class="jobs-form">
+        <form nz-form [formGroup]="validateForm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <nz-form-item>
+                            <nz-form-control nzHasFeedback nzErrorTip="Please input your name!">
+                                <nz-input-group nzPrefixIcon="user">
+                                    <input 
+                                        type="text" 
+                                        nz-input 
+                                        formControlName="name" 
+                                        placeholder="Your name ..." 
+                                    />
+                                </nz-input-group>
+                            </nz-form-control>
+                        </nz-form-item>  
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <nz-form-item>
+                            <nz-form-control nzHasFeedback nzErrorTip="Please input a valid email!">
+                                <nz-input-group nzPrefixIcon="mail">
+                                    <input
+                                        placeholder="Your email ..."
+                                        nz-input
+                                        [(ngModel)]="inputValue"
+                                        (input)="onInput($event)"
+                                        [nzAutocomplete]="auto"
+                                        type="email"
+                                        formControlName="email"
+                                        email
+                                  />
+                                  <nz-autocomplete #auto>
+                                    <nz-auto-option *ngFor="let option of options" [nzValue]="option">{{ option }}</nz-auto-option>
+                                  </nz-autocomplete>                                                            
+                                </nz-input-group>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <nz-form-item>
+                            <nz-form-control nzHasFeedback nzErrorTip="Please input your job title!">
+                                <nz-input-group nzPrefixIcon="edit">
+                                    <input  
+                                        type="text" 
+                                        nz-input 
+                                        formControlName="jobTitle" 
+                                        placeholder="Your job title ..."                                                             
+                                    />
+                                </nz-input-group>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <nz-form-item>
+                            <nz-form-control nzHasFeedback nzErrorTip="Please input your phone number!">
+                                <nz-input-group nzPrefixIcon="mobile">
+                                    <input  
+                                        type="number" 
+                                        nz-input 
+                                        formControlName="phone" 
+                                        placeholder="Your phone number ..."                                                             
+                                    />
+                                </nz-input-group>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <nz-form-item>
+                            <nz-form-control nzHasFeedback nzErrorTip="Please input your date of birth!">
+                                <nz-date-picker 
+                                    nzPlaceHolder="Select your date of birth ..."  
+                                    formControlName="dateOfBirth"                                   
+                                ></nz-date-picker>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div> 
+                    <div class="col-12 col-sm-12">
+                        <nz-form-item>
+                            <nz-form-control nzHasFeedback nzErrorTip="Please upload your CV">
+                                <nz-upload 
+                                    nzAction="https://jsonplaceholder.typicode.com/posts/"
+                                >
+                                    <button nz-button matRipple class="upload-btn">
+                                        <i nz-icon nzType="upload"></i>
+                                        <span>Upload your CV</span>
+                                    </button>
+                                </nz-upload>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>                                                         
+                    <div class="col-12 col-sm-12">
+                        <nz-form-item>
+                            <nz-form-control>
+                              <button class="submit-button" matRipple>Join Us</button>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </div>
+                </div>
+            </div>                           
+        </form>        
+    </div>
+    <!-- end form -->
+</section>

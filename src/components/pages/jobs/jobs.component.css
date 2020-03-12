@@ -1,0 +1,33 @@
+.jobs{
+    margin-top: 80px;
+}
+
+.jobs p{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.jobs .jobs-form{
+    margin-top: 50px;
+}
+
+.jobs .jobs-form .upload-btn{
+    width: 100%;
+}
+
+.jobs .jobs-form .submit-button{
+    color: #fff;
+    background-color: #609beb;
+    width: 200px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .jobs p{
+        width: 80%;
+    }
+}

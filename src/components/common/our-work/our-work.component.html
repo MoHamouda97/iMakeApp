@@ -1,0 +1,44 @@
+<section class="our-work-section">
+    <h2 class="second-color section-heading">
+        Our Works
+        <span class="big-letter">W</span>
+    </h2>   
+    
+    <!-- start filter -->
+    <ul class="filters">
+        <li class="filter-item active transition" data-filter="all" (click)="changeClass($event)" matRipple>All</li>
+        <li class="filter-item transition" data-filter=".web" (click)="changeClass($event)" matRipple>Websites</li>
+        <li class="filter-item transition" data-filter=".app" (click)="changeClass($event)" matRipple>Apps</li>
+    </ul>
+    <!-- end filter -->
+
+    <!-- start works -->
+    <div class="works">
+        <div class="work web mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work1.jpg" class="img-responsive transition" />
+        </div>
+        <div class="work app mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work2.jpg" class="img-responsive transition" />
+        </div>
+        <div class="work app mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work2.jpg" class="img-responsive transition" />
+        </div>
+        <div class="work web mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work1.jpg" class="img-responsive transition" />
+        </div>
+        
+        <div class="work app mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work2.jpg" class="img-responsive transition" />
+        </div>
+        <div class="work web mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work1.jpg" class="img-responsive transition" />
+        </div>
+        <div class="work web mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work1.jpg" class="img-responsive transition" />
+        </div>        
+        <div class="work app mix" nzTooltipTitle="Project Name ..." nzTooltipPlacement="top" nz-tooltip>
+            <img src="./../../../assets/work2.jpg" class="img-responsive transition" />
+        </div>         
+    </div>
+    <!-- end works -->
+</section>

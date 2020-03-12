@@ -1,0 +1,43 @@
+.our-services{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.our-services > p{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.our-services .services{
+    margin-top: 50px;
+}
+
+.our-services .services .service{
+    padding-bottom: 10px;
+}
+
+.our-services .services .service .service-icon{
+    text-align: center;
+    font-size: 70px;
+    color: #609beb;
+}
+
+.our-services .services .service .service-title{
+    text-align: center;
+    color: #131313;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.our-services .services .service .service-details{
+    text-align: justify;
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 576px) {
+    .our-services > p{
+        width: 80%;
+    }
+}

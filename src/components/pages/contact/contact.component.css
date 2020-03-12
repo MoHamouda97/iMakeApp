@@ -1,0 +1,65 @@
+ .contact-page .contact-info{
+     margin-top: 80px;
+ }
+
+ .contact-page .contact-info .sub-info  h4{
+    margin-bottom: 15px;
+    color: #131313;
+ }
+
+ .contact-page .contact-info .sub-info .office-info-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+ }
+
+ .contact-page .contact-info .sub-info .office-info-list li{
+     margin-bottom: 10px;
+ }
+
+ .contact-page .contact-info .sub-info .office-info-list .icon{
+     color: #609beb;
+     font-size: 20px;
+ }
+
+ .contact-page .contact-info .sub-info .office-info-list .hint{
+    padding: 0 3px;
+    font-weight: 400;
+ }
+
+ .contact-page .contact-info .sub-info .office-info-list .info{
+     color: #787878;
+ }
+
+ .contact-page .contact-info .main-info p{
+    text-align: justify;
+    line-height: 1.8;
+ }
+
+ .contact-page .contact-info .main-info .contact-form-area{
+     margin-top: 50px;
+ }
+
+ .contact-page .contact-info .main-info .contact-form-area .contact-form textarea{
+     height: 250px;
+ }
+
+ .contact-page .contact-info .main-info .contact-form-area .contact-form .submit-button{
+    color: #fff;
+    background-color: #609beb;
+    width: 200px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+ }
+
+ @media only screen and (max-width: 576px) {
+     .sub-info{
+        margin-top: 50px;
+     }
+
+    .contact-page .contact-info .main-info p{
+        width: 80%;
+        margin: auto;
+    }
+}

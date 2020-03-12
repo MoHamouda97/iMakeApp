@@ -1,0 +1,224 @@
+<app-page-header>
+    <div class="page-header-img">
+        <img src="./../../../assets/contact-header.jpg" class="img-responsive" />
+    </div>
+    <div class="page-header-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Contact Us
+                    </h2>
+                </div>
+                <div class="col-1 icon">
+                    <i nz-icon nzType="phone" nzTheme="outline"></i>
+                </div>
+                <div class="col-11">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</app-page-header>
+
+<section class="contact-page">
+    <!-- start google map -->
+    <div class="google-map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.2358520874545!2d31.234067215067764!3d29.97265118190842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847bf11d6f8a9%3A0x72d482fc627021f6!2sMaadi%20Star%20Towers%2C%20Kornish%20Al%20Nile%2C%20Al%20Isaweyah%2C%20El%20Basatin%2C%20Giza%20Governorate!5e0!3m2!1sen!2seg!4v1584005674668!5m2!1sen!2seg" 
+            width="100%" 
+            height="450" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0"></iframe>
+    </div>
+    <!-- end google map -->
+
+    <!-- start contact info -->
+    <div class="contact-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="main-info">
+                        <h3 class="sub-head">
+                            Contact Info
+                        </h3>
+                        <p class="paragrahp-color">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <div class="contact-form-area">
+                            <form nz-form [formGroup]="validateForm" class="contact-form">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-12">
+                                                <nz-form-item>
+                                                    <nz-form-control nzHasFeedback nzErrorTip="Please input your name!">
+                                                        <nz-input-group nzPrefixIcon="user">
+                                                            <input 
+                                                                type="text" 
+                                                                nz-input 
+                                                                formControlName="name" 
+                                                                placeholder="Your name ..." 
+                                                            />
+                                                        </nz-input-group>
+                                                    </nz-form-control>
+                                                </nz-form-item>  
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <nz-form-item>
+                                                    <nz-form-control nzHasFeedback nzErrorTip="Please input your email!">
+                                                        <nz-input-group nzPrefixIcon="mail">
+                                                            <input
+                                                                placeholder="Your email ..."
+                                                                nz-input
+                                                                [(ngModel)]="inputValue"
+                                                                (input)="onInput($event)"
+                                                                [nzAutocomplete]="auto"
+                                                                type="email"
+                                                                formControlName="email"
+                                                          />
+                                                          <nz-autocomplete #auto>
+                                                            <nz-auto-option *ngFor="let option of options" [nzValue]="option">{{ option }}</nz-auto-option>
+                                                          </nz-autocomplete>                                                            
+                                                        </nz-input-group>
+                                                    </nz-form-control>
+                                                </nz-form-item>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <nz-form-item>
+                                                    <nz-form-control nzHasFeedback nzErrorTip="Please input the subject!">
+                                                        <nz-input-group nzPrefixIcon="edit">
+                                                            <input  
+                                                                type="text" 
+                                                                nz-input 
+                                                                formControlName="subject" 
+                                                                placeholder="The subject ..."                                                             
+                                                            />
+                                                        </nz-input-group>
+                                                    </nz-form-control>
+                                                </nz-form-item>
+                                            </div>
+                                            <div class="col-12">
+                                                <nz-form-item>
+                                                    <nz-form-control nzHasFeedback nzErrorTip="Please input your message!">
+                                                        <nz-input-group>
+                                                            <textarea 
+                                                                formControlName="message" 
+                                                                nz-input 
+                                                                placeholder="Write your message ..."
+                                                            ></textarea>
+                                                        </nz-input-group>
+                                                    </nz-form-control>
+                                                </nz-form-item>
+                                            </div>
+                                            <div class="col-12">
+                                                <nz-form-item>
+                                                    <nz-form-control>
+                                                      <button class="submit-button" matRipple>Message Us</button>
+                                                    </nz-form-control>
+                                                </nz-form-item>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sub-info">
+                        <h3 class="sub-head">
+                            The Office
+                        </h3>
+
+                        <h4>
+                            iMakeApp
+                        </h4>
+                        <ul class="office-info-list">
+                            <li>
+                                <span class="icon">
+                                    <i nz-icon nzType="environment" nzTheme="outline"></i>
+                                </span>
+                                <span class="hint">
+                                    <strong>
+                                        Address:
+                                    </strong>
+                                </span>
+                                <span class="info">
+                                    Lorem Ipsum is simply dummy text.
+                                </span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <i nz-icon nzType="car" nzTheme="outline"></i>
+                                </span>
+                                <span class="hint">
+                                    <strong>
+                                        City:
+                                    </strong>
+                                </span>
+                                <span class="info">
+                                    Lorem Ipsum is simply dummy text.
+                                </span>
+                            </li> 
+                            <li>
+                                <span class="icon">
+                                    <i nz-icon nzType="phone" nzTheme="outline"></i>
+                                </span>
+                                <span class="hint">
+                                    <strong>
+                                        P:
+                                    </strong>
+                                </span>
+                                <span class="info">
+                                    00201555641311
+                                </span>
+                            </li>                                                        
+                        </ul>
+
+                        <nz-divider></nz-divider>
+
+                        <h4>
+                            Emails
+                        </h4>
+                        <ul class="office-info-list">
+                            <li>
+                                <span class="icon">
+                                    <i nz-icon nzType="mail" nzTheme="outline"></i>
+                                </span>
+                                <span class="hint">
+                                    <strong>
+                                        Email:
+                                    </strong>
+                                </span>
+                                <span class="info">
+                                    info@example.com
+                                </span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <i nz-icon nzType="mail" nzTheme="outline"></i>
+                                </span>
+                                <span class="hint">
+                                    <strong>
+                                        Email:
+                                    </strong>
+                                </span>
+                                <span class="info">
+                                    hr@example.com
+                                </span>
+                            </li>                                                      
+                        </ul>                        
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- end contact info -->
+</section>

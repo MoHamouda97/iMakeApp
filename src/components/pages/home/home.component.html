@@ -1,0 +1,48 @@
+<div class="home-slider">
+    <owl-carousel-o [options]="customOptions" class="home-carousel"> 
+        <ng-template carouselSlide>
+            <img src="./../../../assets/slider-img.jpg" alt="logo" class="logo-image" />
+            <div class="q-a">
+                <div class="question wow fadeInDown" data-wow-duration="2s">
+                    <h3>
+                        Do You need a great customer subbort ?
+                    </h3>
+                </div>
+                <div class="answer wow fadeInUp">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="cta wow fadeIn">
+                    <a href="#" matRipple>
+                        Start Now !!
+                    </a>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </ng-template>  
+        <ng-template carouselSlide>
+            <img src="./../../../assets/slider-img2.jpg" alt="logo" class="logo-image" />
+            <div class="q-a">
+                <div class="question">
+                    <h3>
+                        Do You need a new website ?
+                    </h3>
+                </div>
+                <div class="answer">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="cta">
+                    <a href="#" matRipple>
+                        Start Now !!
+                    </a>
+                </div>
+            </div>
+            <div class="overlay"></div>            
+        </ng-template>                                  
+    </owl-carousel-o> 
+</div>
+<app-cta></app-cta>
+<app-about></app-about>

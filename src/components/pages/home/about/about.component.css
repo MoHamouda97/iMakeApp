@@ -1,0 +1,232 @@
+.about{
+    margin-top: 80px;
+}
+
+.about .who-we-are{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.about .who-we-are p{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about-more-details{
+    margin-top: 80px;
+    border-top: 3px solid #e8e8e8;
+}
+
+.about-more-details .what-we-do .what-we-do-img{
+    float: right;
+    width: 50%;
+}
+
+.about-more-details .what-we-do .what-we-do-details{
+    float: left;
+    width: 50%;
+}
+
+.about-more-details .what-we-do .what-we-do-details .content h3{
+    margin-top: 50px;
+}
+
+.about-more-details .what-we-do .what-we-do-details .what-we-do-list {
+    margin-top: 25px;
+}
+
+.about-more-details .what-we-do .what-we-do-details .what-we-do-list .icon{
+    text-align: right;
+    color: #609beb;
+    font-size: 22px;
+}
+
+.about-more-details .what-we-do .what-we-do-details .what-we-do-list .title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.about-more-details .what-we-do .what-we-do-details .what-we-do-list .details{
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.partner .partner-img{
+    width: 50%;
+    float: left;
+}
+
+.partner  .partner-details{
+    float: right;
+    width: 50%;
+}
+
+.partner  .partner-details .content{
+    margin-top: 50px;
+}
+
+.partner  .partner-details .content .partner-collaps{
+    margin-top: 25px;
+}
+
+.ant-collapse{
+    border: 1px solid #e6e6e6 !important;
+    background-color: #fff !important;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header{
+    padding: 12px 16px 12px 57px !important;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow{
+    padding: 18px !important;
+    left: 0 !important;
+    border-right: 1px solid #e6e6e6 !important;
+    border-radius: 5px 0 0 5px !important;
+}
+
+.our-work{
+    margin-top: 80px;
+}
+
+.testimonials{
+    margin-top: 50px;
+}
+
+.testimonials .testimonials-carousel{
+    background-color: #fff;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+
+.testimonials .testimonials-carousel .carousel-content{
+    padding: 15px;
+}
+
+.testimonials .testimonials-carousel .carousel-content .carousel-image img{
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.testimonials .testimonials-carousel .carousel-content .carousel-client{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonials-carousel .carousel-content .carousel-client h3{
+    color: #131313;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonials .testimonials-carousel .carousel-content .carousel-client h4{
+    color: #787878;
+}
+
+.testimonials .testimonials-carousel .carousel-content .carousel-feadback{
+    line-height: 1.8;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.our-clients{
+    margin-top: 80px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../../../assets/clients.jpg');
+    height: 450px;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.our-clients h2{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.our-clients p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 85px;
+}
+
+.our-clients .logo-carousel{
+    border-bottom: 1px solid #fff;
+}
+
+.our-clients .logo-carousel .logo-image{
+    margin: auto;
+    width: 150px;
+}
+
+/* start responsive */
+
+@media only screen and (max-width: 992px) {
+
+    .about-more-details .what-we-do .what-we-do-img,
+    .about-more-details .what-we-do .what-we-do-details,
+    .partner  .partner-details,
+    .partner .partner-img {
+        float: none;
+        width: 100%;
+    }
+
+    .about-more-details .what-we-do .what-we-do-details {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .about-more-details .what-we-do .what-we-do-img,
+    .about-more-details .what-we-do .what-we-do-details,
+    .partner  .partner-details,
+    .partner .partner-img {
+        float: none;
+        width: 100%;
+    }
+
+    .about-more-details .what-we-do .what-we-do-details {
+        margin-bottom: 25px;
+    }
+
+    .about .who-we-are p{
+        width: 70%;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    .about-more-details .what-we-do .what-we-do-img,
+    .about-more-details .what-we-do .what-we-do-details,
+    .partner  .partner-details,
+    .partner .partner-img {
+        float: none;
+        width: 100%;
+    }
+
+    .about-more-details .what-we-do .what-we-do-details {
+        margin-bottom: 25px;
+    }    
+
+    .about .who-we-are p{
+        width: 100%;
+    }
+
+    .our-clients p{
+        margin-bottom: 50px;
+    }
+}

@@ -1,1 +1,231 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import '~bootstrap-4-grid/css/grid.min.css';
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.main-color{
+    color: #609beb;
+}
+
+.second-color{
+    color: #131313;
+}
+
+.paragrahp-color{
+    color: #787878;
+}
+
+.transition{
+    transition: all .3s ease-out;
+}
+
+.align{
+    align-items: center;
+    align-content: center;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.section-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.big-letter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 90px;
+    top: -39px;
+    z-index: -1;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .3)
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.sub-head{
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #131313;
+    text-transform: capitalize;
+}
+
+.sub-head:after{
+    content: '';
+    width: 45px;
+    display: block;
+    border: 1px solid #609beb;
+    margin: auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.page-header-details{
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    z-index: 99;
+    width: 100%;
+}
+
+.page-header-details h2{
+    color: #fff;
+    font-size: 45px;
+    border-bottom: 1px solid #609beb;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.page-header-details p{
+    text-align: justify;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.page-header-details .icon{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 55px;
+    color: #609beb;
+}
+
+/* ant design */
+
+.ant-collapse{
+    border: 1px solid #e6e6e6 !important;
+    background-color: #fff !important;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header{
+    padding: 12px 16px 12px 57px !important;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow{
+    padding: 18px !important;
+    left: 0 !important;
+    border-right: 1px solid #e6e6e6 !important;
+    border-radius: 5px 0 0 5px !important;
+}
+
+.ant-carousel .slick-dots li{
+    background-color: #d7d7d7;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.ant-carousel .slick-dots li.slick-active{
+    background-color: #609beb;
+}
+
+.ant-carousel .slick-dots li button{
+    display: none;
+}
+
+.ant-calendar-picker,
+.ant-upload.ant-upload-select{
+    width: 100%;
+}
+
+/* owl carousel */
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+    display: block;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    transition: all .3s ease-out;
+    width: 50px;
+    background-color: #d7d7d7 !important;
+    padding: 0 5px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: #609beb !important;
+}
+
+.home-slider .home-carousel .owl-theme .owl-nav .owl-prev,
+.home-slider .home-carousel .owl-theme .owl-nav .owl-next{
+    position: absolute !important;
+    height: 70px !important;
+    width: 35px !important;
+    line-height: 70px !important;
+    text-align: center !important;
+    background-color: rgba(0, 0, 0, .5) !important;
+    border-radius: 0 !important;
+}
+
+.home-slider .home-carousel .owl-theme .owl-nav .owl-prev{
+    left: -5px !important;
+    top: 350px !important;
+}
+
+.home-slider .home-carousel .owl-theme .owl-nav .owl-next{
+    right: -5px !important;
+    top: 350px !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* start responsive */
+
+@media only screen and (max-width: 768px) {
+
+    .home-slider .home-carousel .owl-theme .owl-nav .owl-prev,
+    .home-slider .home-carousel .owl-theme .owl-nav .owl-next{
+        top: 240px !important;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .home-slider .home-carousel .owl-theme .owl-nav .owl-prev,
+    .home-slider .home-carousel .owl-theme .owl-nav .owl-next{
+        top: 89.5px !important;
+    }
+
+    .page-header-details{
+        top: 20%;
+    }
+
+    .page-header-details h2{
+        font-size: 25px;
+    }
+
+    .page-header-details .icon{
+        font-size: 30px;
+    }
+
+    .page-header-details p{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+}

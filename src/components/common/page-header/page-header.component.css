@@ -1,0 +1,11 @@
+.page-header{
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 576px) {
+    .page-header{
+        height: 184px;
+    }
+}
